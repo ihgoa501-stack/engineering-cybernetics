@@ -1,4 +1,0 @@
-interface:
-  display_name: "Engineering Cybernetics"
-  short_description: "Use feedback and control principles for engineering decisions"
-  default_prompt: "Use $engineering-cybernetics to design and verify this project's feedback loop."
