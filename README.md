@@ -30,6 +30,7 @@
 .opencode/plugins/*.mjs                OpenCode 适配器
 hooks/claude-codex-hooks.json          Claude/Codex 生命周期 Hook
 hooks/inject-router.js                 轻量路由注入器
+ETHOS.md                               项目长期稳定的工程信念
 skills/engineering-cybernetics/        三端共用的唯一 Skill 源
 opencode.json                           OpenCode 本仓库配置
 tests/router-hook.test.js              Hook 契约测试
@@ -91,6 +92,7 @@ codex plugin add engineering-cybernetics@engineering-cybernetics
 
 所有平台都读取仓库中的同一份 `skills/engineering-cybernetics/`，不会维护三份副本：
 
+- 修改长期工程信念：改 `ETHOS.md`；
 - 修改触发和流程：改 `SKILL.md`；
 - 修改总纲：改 `references/CORE.md`；
 - 修改场景：改 `references/scenarios/`；

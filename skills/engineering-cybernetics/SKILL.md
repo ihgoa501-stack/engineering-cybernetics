@@ -5,7 +5,7 @@ description: Apply engineering cybernetics to non-trivial software systems, soft
 
 # Engineering Cybernetics
 
-1. Read [the core model](references/CORE.md).
+1. Read [the project ethos](../../ETHOS.md) and [the core model](references/CORE.md).
 2. Define the control objective, constraints, current state, observations, available actions, disturbances, feedback, and safe state.
 3. Read [the scenario registry](references/SCENARIOS.md) and choose one primary scenario. Add another only for an independent cross-domain risk.
 4. Complete the smallest observable feedback loop without expanding the product scope.
