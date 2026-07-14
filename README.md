@@ -32,6 +32,8 @@ hooks/claude-codex-hooks.json          Claude/Codex 生命周期 Hook
 hooks/inject-router.js                 轻量路由注入器
 ETHOS.md                               项目长期稳定的工程信念
 skills/engineering-cybernetics/        三端共用的唯一 Skill 源
+skills/engineering-cybernetics/references/BUILDING_WITH_AI.md
+                                       AI 辅助建设纪律
 opencode.json                           OpenCode 本仓库配置
 tests/router-hook.test.js              Hook 契约测试
 ```
@@ -98,6 +100,7 @@ codex plugin add engineering-cybernetics@engineering-cybernetics
 - 修改长期工程信念：改 `ETHOS.md`；
 - 修改触发和流程：改 `SKILL.md`；
 - 修改总纲：改 `references/CORE.md`；
+- 修改 AI 辅助建设纪律：改 `references/BUILDING_WITH_AI.md`；
 - 修改场景：改 `references/scenarios/`；
 - 新增场景：增加一个场景文档，并只在 `references/SCENARIOS.md` 登记一次。
 
