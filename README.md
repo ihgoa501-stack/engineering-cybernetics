@@ -29,6 +29,48 @@
 
 只有当真实场景出现不同的目标、观测、控制动作、反馈延迟或安全边界时，才增加新的垂直文档。
 
+## Agent 自动加载
+
+本仓库同时是一个可移植的 Agent 规则包：
+
+- `AGENTS.md`：不支持插件的平台使用的常驻核心规则；
+- `skills/engineering-cybernetics/SKILL.md`：按任务触发并加载对应场景；
+- `hooks/`：Claude Code 和 Codex 在主会话、子 Agent 启动时注入总纲；
+- `.opencode/plugins/`：OpenCode 每轮注入同一份总纲；
+- `adapters/`：Kilo 和 Antigravity 的安装包；
+- Cursor、Windsurf、Cline、Copilot、Kiro、Qoder 的规则文件由 `scripts/sync-adapters.mjs` 从 `AGENTS.md` 生成。
+
+### Claude Code
+
+```text
+/plugin marketplace add ihgoa501-stack/engineering-cybernetics
+/plugin install engineering-cybernetics@engineering-cybernetics
+```
+
+### Codex
+
+```bash
+codex plugin marketplace add ihgoa501-stack/engineering-cybernetics
+codex plugin add engineering-cybernetics@engineering-cybernetics
+```
+
+安装后检查并信任插件 Hook，然后开启新任务。其他 Agent 的加载级别和安装位置见 [Agent 兼容说明](docs/agent-portability.md)。
+
+## 修改和扩展
+
+- 修改总纲：只改 `ENGINEERING_CYBERNETICS.md`；
+- 修改场景：只改对应 `control-scenarios/` 文档；
+- 新增场景：增加文档，并只在 `SCENARIOS.md` 登记触发条件和路径；
+- 修改 `AGENTS.md` 或 Skill 后：运行 `node scripts/sync-adapters.mjs`；
+- 发布更新后：已安装的 Agent 需要更新插件并开启新任务，GitHub 内容不会自动替换本机旧版本。
+
+验证适配器和加载行为：
+
+```bash
+node scripts/sync-adapters.mjs --check
+node tests/loading.test.mjs
+```
+
 ## 历史版本
 
 仓库最初的 8-lens 架构设计 Skill、参考资料和示例已原样归档到 [history/v1-architecture-skill/](history/v1-architecture-skill/)。新版文档覆盖其主入口，但不删除原始成果。

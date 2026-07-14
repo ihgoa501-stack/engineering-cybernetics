@@ -1,0 +1,21 @@
+{
+  "name": "engineering-cybernetics",
+  "interface": {
+    "displayName": "Engineering Cybernetics"
+  },
+  "plugins": [
+    {
+      "name": "engineering-cybernetics",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ihgoa501-stack/engineering-cybernetics.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
