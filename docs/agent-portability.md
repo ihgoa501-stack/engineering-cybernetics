@@ -37,6 +37,10 @@
 
 启动 Hook 读取 `AGENTS.md` 和 `ENGINEERING_CYBERNETICS.md`。子 Agent Hook 读取同一来源，不依赖父 Agent 自行转述。
 
+Codex 的 `/hooks` 是 CLI 命令，不是桌面 App 命令。在 CLI 中审核后，Codex 会把当前 Hook 定义的信任哈希写入 `~/.codex/config.toml`。同一台机器上的桌面 App 使用这份配置；信任完成后应重启 App 并开启新任务。Hook 内容发生变化时，哈希会变化，需要重新审核。
+
+官方依据：[Codex CLI 斜杠命令](https://learn.chatgpt.com/docs/developer-commands.md?surface=cli)、[Codex Hooks](https://learn.chatgpt.com/docs/hooks.md)。
+
 ### OpenCode
 
 `.opencode/plugins/engineering-cybernetics.mjs` 在每轮系统上下文中加入总纲，并把仓库的 `skills/` 注册到 OpenCode。使用本地检出时，在 `opencode.json` 的 `plugin` 数组中加入该文件的绝对路径。

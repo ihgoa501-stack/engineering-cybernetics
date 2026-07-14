@@ -54,7 +54,21 @@ codex plugin marketplace add ihgoa501-stack/engineering-cybernetics
 codex plugin add engineering-cybernetics@engineering-cybernetics
 ```
 
-安装后检查并信任插件 Hook，然后开启新任务。其他 Agent 的加载级别和安装位置见 [Agent 兼容说明](docs/agent-portability.md)。
+`/hooks` 只在 Codex CLI 的交互界面中提供，Codex 桌面 App 目前没有这个斜杠命令。安装后请启动 Codex CLI：
+
+```bash
+codex
+```
+
+如果 macOS 终端找不到 `codex`，使用桌面 App 内置的可执行文件：
+
+```bash
+/Applications/ChatGPT.app/Contents/Resources/codex
+```
+
+进入 CLI 后输入 `/hooks`，审核并信任本插件的 `SessionStart` 和 `SubagentStart` Hook。信任信息保存在同一个 `~/.codex/config.toml` 中；完成后重启桌面 App 并开启新任务。不要使用 `--dangerously-bypass-hook-trust` 代替正常审核。
+
+其他 Agent 的加载级别和安装位置见 [Agent 兼容说明](docs/agent-portability.md)。
 
 ## 修改和扩展
 
