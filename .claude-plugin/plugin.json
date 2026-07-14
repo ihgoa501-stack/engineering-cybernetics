@@ -1,0 +1,10 @@
+{
+  "name": "engineering-cybernetics",
+  "version": "0.1.0",
+  "description": "Apply engineering cybernetics to evolving software, agent, business, and physical control problems.",
+  "author": {
+    "name": "ihgoa501-stack",
+    "url": "https://github.com/ihgoa501-stack"
+  },
+  "hooks": "./hooks/claude-codex-hooks.json"
+}

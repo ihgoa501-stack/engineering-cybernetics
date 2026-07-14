@@ -1,0 +1,37 @@
+{
+  "name": "engineering-cybernetics",
+  "version": "0.1.0",
+  "description": "Route evolving software, agent, business, and physical tasks into observable feedback loops.",
+  "author": {
+    "name": "ihgoa501-stack",
+    "url": "https://github.com/ihgoa501-stack"
+  },
+  "homepage": "https://github.com/ihgoa501-stack/engineering-cybernetics",
+  "repository": "https://github.com/ihgoa501-stack/engineering-cybernetics",
+  "license": "MIT",
+  "keywords": [
+    "cybernetics",
+    "feedback",
+    "agent",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/claude-codex-hooks.json",
+  "interface": {
+    "displayName": "Engineering Cybernetics",
+    "shortDescription": "Feedback control for evolving tasks",
+    "longDescription": "Detects control problems and loads the smallest observable feedback loop needed for software, agents, business workflows, or physical systems.",
+    "developerName": "ihgoa501-stack",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions",
+      "Lifecycle hooks"
+    ],
+    "websiteURL": "https://github.com/ihgoa501-stack/engineering-cybernetics",
+    "defaultPrompt": [
+      "Turn this evolving task into a measurable feedback loop.",
+      "Find the missing observation, action, or safety boundary.",
+      "Design the smallest real control loop for this workflow."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "engineering-cybernetics",
+  "description": "Feedback control for evolving software, Agent, business, and physical tasks.",
+  "owner": {
+    "name": "ihgoa501-stack",
+    "url": "https://github.com/ihgoa501-stack"
+  },
+  "plugins": [
+    {
+      "name": "engineering-cybernetics",
+      "description": "Detect control problems and complete the smallest observable feedback loop.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
