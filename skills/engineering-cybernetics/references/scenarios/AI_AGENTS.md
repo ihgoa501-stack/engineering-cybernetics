@@ -54,5 +54,9 @@ Agent 的自主性应来自可靠闭环，而不是来自更宽泛的权限。
 ## 垂直场景
 
 - [AI 编码 Agent](ai-agents/CODING_AGENT.md)：读取和修改代码库、运行命令并验证开发结果。
+- [多 Agent 协作](ai-agents/MULTI_AGENT.md)：多个 Agent 并行研究、审查、执行或交接任务。
+- [LangGraph 控制场景](ai-agents/LANGGRAPH_CONTROL.md)：使用 LangGraph 设计状态图、循环、持久化、人类介入或多 Agent 编排。
+- [AutoGen 控制场景](ai-agents/AUTOGEN_CONTROL.md)：使用 Microsoft AutoGen 设计 AgentChat、Core、GroupChat、GraphFlow 或 Studio 工作流。
+- [Skill 与规则演化](ai-agents/SKILL_EVOLUTION.md)：新增或修改 Skill、Hook、场景、规则和 Agent 指令。
 
 只有当新场景出现不同的目标、观测、控制动作或安全边界时，才增加新的垂直文档。

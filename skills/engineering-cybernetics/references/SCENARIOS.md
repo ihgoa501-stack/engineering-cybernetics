@@ -14,7 +14,12 @@
 | 机器、设备、飞行器或工业过程 | [物理控制系统](scenarios/PHYSICAL_SYSTEMS.md) |
 | 在线服务、数据库、队列或分布式系统 | [软件系统](scenarios/SOFTWARE_SYSTEMS.md) |
 | 从问题、范围到交付和使用反馈 | [软件项目开发](scenarios/SOFTWARE_DEVELOPMENT.md) |
+| 非技术用户想做系统，但不懂技术、架构、语言、框架或术语 | [非技术用户的软件建设控制](scenarios/software-development/NON_TECHNICAL_BUILDER.md) |
 | 自动决策、工具调用或多 Agent 协作 | [AI Agent 与自动化](scenarios/AI_AGENTS.md) |
+| 多个 Agent 并行研究、审查、执行、交接、编排或架构设计 | [多 Agent 协作](scenarios/ai-agents/MULTI_AGENT.md) |
+| 使用 LangGraph 设计状态图、循环、持久化、人类介入或多 Agent 编排 | [LangGraph 控制场景](scenarios/ai-agents/LANGGRAPH_CONTROL.md) |
+| 使用 Microsoft AutoGen 设计 AgentChat、Core、GroupChat、GraphFlow 或 Studio 工作流 | [AutoGen 控制场景](scenarios/ai-agents/AUTOGEN_CONTROL.md) |
+| Skill、Hook、场景、规则或 Agent 指令的新增与修改 | [Skill 与规则演化](scenarios/ai-agents/SKILL_EVOLUTION.md) |
 | 投放、库存、定价或运营实验 | [业务反馈闭环](scenarios/BUSINESS_LOOPS.md) |
 | AI 编码 Agent 的开发与验证 | [AI 编码 Agent](scenarios/ai-agents/CODING_AGENT.md) |
 | 从真实问题到首个可用闭环 | [首个可用闭环](scenarios/software-development/FIRST_USABLE_LOOP.md) |

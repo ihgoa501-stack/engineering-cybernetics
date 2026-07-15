@@ -88,5 +88,6 @@
 ## 垂直场景
 
 - [从真实问题到首个可用闭环](software-development/FIRST_USABLE_LOOP.md)：适用于新项目或尚未完成第一次真实交付的项目。
+- [非技术用户的软件建设控制](software-development/NON_TECHNICAL_BUILDER.md)：适用于用户想做系统但无法判断技术、架构、语言、框架和术语的项目。
 
 只有当项目类型出现不同的阶段门、反馈信号或失败边界时，才增加新的垂直文档。
